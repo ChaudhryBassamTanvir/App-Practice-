@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, Text, SafeAreaView, ScrollView, StyleSheet} from 'react-native';
 import FlatCard from './components/FlatCard';
+import ElevatedCard from './components/ElevatedCard';
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
         <Text style={styles.container}>First Practice Project</Text>
 
         <FlatCard />
+        <ElevatedCard />
       </ScrollView>
     </SafeAreaView>
   );
