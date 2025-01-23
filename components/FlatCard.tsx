@@ -17,6 +17,9 @@ const FlatCard = () => {
         <View style={[styles.card, styles.cardThree]}>
           <Text style={styles.colorTxt}>Blue</Text>
         </View>
+        <View style={[styles.card, styles.cardFour]}>
+          <Text style={styles.colorTxt}>Sky</Text>
+        </View>
       </View>
     </View>
   );
@@ -42,7 +45,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    width: 100,
+    width: '100%',
     height: 100,
     borderRadius: 4,
     margin: 8,
@@ -56,5 +59,8 @@ const styles = StyleSheet.create({
   },
   cardThree: {
     backgroundColor: '#5DA3FA',
+  },
+  cardFour: {
+    backgroundColor: '#5ACAFF',
   },
 });
