@@ -1,4 +1,4 @@
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, ScrollView} from 'react-native';
 import React from 'react';
 
 const ElevatedCard = () => {
@@ -6,20 +6,23 @@ const ElevatedCard = () => {
     <View style={{}}>
       <Text style={[styles.colorTxt, styles.cardHeading]}>ElevatedCard</Text>
 
-      <View style={styles.container}>
+      <ScrollView horizontal={true} style={styles.container}>
         <View style={[styles.card, styles.cardOne]}>
-          <Text style={styles.colorTxt}>Red</Text>
+          <Text style={styles.colorTxt}>Tap</Text>
         </View>
         <View style={[styles.card, styles.cardTwo]}>
-          <Text style={styles.colorTxt}>Green</Text>
+          <Text style={styles.colorTxt}>to</Text>
         </View>
         <View style={[styles.card, styles.cardThree]}>
-          <Text style={styles.colorTxt}>Blue</Text>
+          <Text style={styles.colorTxt}>Scroll</Text>
         </View>
         <View style={[styles.card, styles.cardFour]}>
-          <Text style={styles.colorTxt}>Sky</Text>
+          <Text style={styles.colorTxt}>Right</Text>
         </View>
-      </View>
+        <View style={[styles.card, styles.cardOne]}>
+          <Text style={styles.colorTxt}>Okay :</Text>
+        </View>
+      </ScrollView>
     </View>
   );
 };
@@ -44,14 +47,14 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    width: '100%',
+    width: 100,
     height: 100,
     borderRadius: 4,
     margin: 8,
     color: '#FFFFFF',
   },
   cardOne: {
-    backgroundColor: '#FF0000',
+    backgroundColor: '#CAD5E2',
   },
   cardTwo: {
     backgroundColor: '#50DBB4',
