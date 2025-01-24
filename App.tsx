@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     // Ensure text is centered vertically
   },
   containerBg: {
-    backgroundColor: '#000000',
-    height: '100%',
+    // backgroundColor: '#000000',
+    // height: '100%',
   },
 });

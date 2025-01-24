@@ -27,7 +27,7 @@ const ActionCard = () => {
           style={styles.cardImage}
         />
         <View style={styles.bodyContainer}>
-          <Text numberOfLines={3}>
+          <Text>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
             magni, rerum omnis fugit repudiandae quod repellendus hic rem dolore
             nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -36,12 +36,11 @@ const ActionCard = () => {
           </Text>
         </View>
         <View style={styles.footerContainer}>
-          {' '}
           <TouchableOpacity
             onPress={() =>
               openWebsite('https://github.com/ChaudhryBassamTanvir')
             }>
-            Read More
+            <Text style={styles.button}>Read More</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -61,5 +60,9 @@ const styles = StyleSheet.create({
     height: 100,
   },
   bodyContainer: {},
-  footerContainer: {},
+  footerContainer: {
+    fontSize: 24,
+    color: '#000000',
+  },
+  button: {},
 });
