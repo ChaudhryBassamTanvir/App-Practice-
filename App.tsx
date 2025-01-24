@@ -4,6 +4,8 @@ import FlatCard from './components/FlatCard';
 import ElevatedCard from './components/ElevatedCard';
 import FancyCard from './components/FancyCard';
 import ActionCard from './components/ActionCard';
+import OnPress from './components/Count';
+import Count from './components/Count';
 
 const App = () => {
   return (
@@ -16,6 +18,7 @@ const App = () => {
         <FancyCard />
         {/* <FancyCard /> */}
         <ActionCard />
+        <Count />
       </ScrollView>
     </SafeAreaView>
   );
