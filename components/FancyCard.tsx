@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     color: '#FFFFFF',
   },
-  imageText: {color: '#000000'},
+  imageText: {color: '#E44236', fontSize: 13},
   imageTextHeading: {
     color: '#000000',
     fontSize: 16,
@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
   cardImage: {
     height: '70%',
     width: '100%',
-    marginBottom: 8,
+    marginBottom: 6,
     borderTopLeftRadius: 6,
     borderTopRightRadius: 26,
   },
