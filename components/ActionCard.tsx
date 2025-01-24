@@ -7,7 +7,6 @@ import {
   View,
 } from 'react-native';
 import React from 'react';
-import ElevatedCard from './ElevatedCard';
 
 const ActionCard = () => {
   function openWebsite(websiteLink: string) {
@@ -40,7 +39,7 @@ const ActionCard = () => {
             onPress={() =>
               openWebsite('https://github.com/ChaudhryBassamTanvir')
             }>
-            <Text style={styles.button}>Read More</Text>
+            <Text style={styles.buttonReadMore}>Read More</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -63,6 +62,13 @@ const styles = StyleSheet.create({
   footerContainer: {
     fontSize: 24,
     color: '#000000',
+    backgroundColor: '#FF0000',
+    height: 40,
+    width: 80,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: 8,
   },
-  button: {},
+  buttonReadMore: {color: '#FFFFFF', fontWeight: 'bold'},
 });
