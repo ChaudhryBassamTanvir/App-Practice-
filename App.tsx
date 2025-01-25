@@ -6,6 +6,7 @@ import FancyCard from './components/FancyCard';
 import ActionCard from './components/ActionCard';
 import OnPress from './components/Count';
 import Count from './components/Count';
+import ContactList from './components/ContactList';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         {/* <FancyCard /> */}
         <ActionCard />
         <Count />
+        <ContactList />
       </ScrollView>
     </SafeAreaView>
   );

@@ -10,6 +10,7 @@ import {
 const Count = () => {
   const [count, setCount] = useState(0);
   const onPress = () => setCount(prevCount => prevCount + 1);
+  const resetCount = () => setCount(0);
 
   return (
     <SafeAreaView style={styles.container}>
@@ -18,6 +19,9 @@ const Count = () => {
       </View>
       <TouchableOpacity style={styles.button} onPress={onPress}>
         <Text>Press Here</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.button} onPress={resetCount}>
+        <Text>Reset text</Text>
       </TouchableOpacity>
     </SafeAreaView>
   );
