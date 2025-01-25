@@ -66,16 +66,29 @@ const styles = StyleSheet.create({
   headingText: {fontSize: 24, fontWeight: 'bold', paddingHorizontal: 8},
   container: {
     paddingHorizontal: 16,
+    marginBottom: 4,
   },
   userImage: {
     width: 80,
     height: 80,
     borderRadius: 80 / 2,
+    marginRight: 14,
   },
-  userName: {},
-  userStatus: {},
+  userName: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '',
+  },
+  userStatus: {
+    fontSize: 12,
+  },
   userCard: {
     flex: 1,
     flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 3,
+    backgroundColor: '#8D3DAF',
+    padding: 8,
+    borderRadius: 14,
   },
 });
